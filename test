@@ -1,0 +1,29 @@
+//  main.swift
+//  HW1
+//
+//  Created by Геннадий Новиков on 13.12.2020.
+//
+
+//import Foundation
+
+let a = 5
+let b = 5
+let c = 1
+let d = (b * b) - (4 * a * c)
+let xOne = ((b * -1) + Int(sqrt(Double(d)))) / 2 * a
+let xTwo = ((b * -1) - Int(sqrt(Double(d)))) / 2 * a
+
+print ("Дискриминант равен", d)
+
+if d < 0 {
+    print ("Значит корней нет")
+}
+
+if d == 0 {
+    print ("Единственный корень уравнения равен", xOne)
+}
+
+if d > 0 {
+    print ("x1 =", xOne)
+    print ("x2 =", xTwo)
+}
